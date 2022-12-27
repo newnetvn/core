@@ -1,0 +1,68 @@
+{
+    "name": "newnet/core",
+    "description": "Newnet Core",
+    "keywords": [
+        "newnet"
+    ],
+    "homepage": "https://newnet.vn",
+    "support" : {
+        "email" : "support@newnet.vn"
+    },
+    "authors": [
+        {
+            "name": "Kim Nguyen",
+            "email": "kimtrien@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "lavary/laravel-menu": "^1.8",
+        "doctrine/dbal": "^2.0|^3.0",
+        "newnet/setting": "*",
+        "newnet/dashboard": "*",
+        "newnet/acl": "*",
+        "newnet/asset": "*"
+    },
+    "require_old": {
+        "lavary/laravel-menu": "~1.7",
+        "kjmtrue/laravel-theme": "*",
+        "newnet/acl": "^2.0",
+        "newnet/asset": "^2.0",
+        "newnet/setting": "^2.0",
+        "newnet/media": "^2.0",
+        "newnet/dashboard": "^2.0",
+        "kalnoy/nestedset": "^5.0|^6.0",
+        "mcamara/laravel-localization": "^1.0",
+        "doctrine/dbal": "^2.10",
+        "spatie/laravel-translatable": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newnet\\Core\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Newnet\\Core\\Tests\\" : "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newnet\\Core\\CoreServiceProvider"
+            ],
+            "aliases": {
+                "Newnet": "Newnet\\Core\\Facades\\Newnet",
+                "AdminMenu": "Newnet\\Core\\Facades\\AdminMenu"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
