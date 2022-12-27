@@ -1,6 +1,7 @@
 {
     "name": "newnet/core",
     "description": "Newnet Core",
+    "license": "MIT",
     "keywords": [
         "newnet"
     ],
@@ -10,8 +11,8 @@
     },
     "authors": [
         {
-            "name": "Kim Nguyen",
-            "email": "kimtrien@gmail.com"
+            "name": "Newnet",
+            "email": "support@newnet.vn"
         }
     ],
     "type": "library",
@@ -22,19 +23,6 @@
         "newnet/dashboard": "*",
         "newnet/acl": "*",
         "newnet/asset": "*"
-    },
-    "require_old": {
-        "lavary/laravel-menu": "~1.7",
-        "kjmtrue/laravel-theme": "*",
-        "newnet/acl": "^2.0",
-        "newnet/asset": "^2.0",
-        "newnet/setting": "^2.0",
-        "newnet/media": "^2.0",
-        "newnet/dashboard": "^2.0",
-        "kalnoy/nestedset": "^5.0|^6.0",
-        "mcamara/laravel-localization": "^1.0",
-        "doctrine/dbal": "^2.10",
-        "spatie/laravel-translatable": "^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -58,9 +46,6 @@
                 "Newnet": "Newnet\\Core\\Facades\\Newnet",
                 "AdminMenu": "Newnet\\Core\\Facades\\AdminMenu"
             }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
         }
     },
     "minimum-stability": "dev",
